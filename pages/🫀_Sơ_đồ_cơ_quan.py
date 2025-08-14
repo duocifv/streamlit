@@ -4,9 +4,10 @@ import numpy as np
 import sys
 import os
 
-# Import theme sau imports chính
+# Import theme và anatomical drawings sau imports chính
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils.theme import apply_white_theme
+from utils.anatomical_drawings import get_accurate_organ_drawing
 
 # Áp dụng theme trắng
 apply_white_theme()
