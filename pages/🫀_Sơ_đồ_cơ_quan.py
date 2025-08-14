@@ -3,6 +3,8 @@ import plotly.graph_objects as go
 import numpy as np
 import sys
 import os
+
+# Import theme sau imports chính
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils.theme import apply_white_theme
 

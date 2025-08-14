@@ -3,6 +3,15 @@ import plotly.graph_objects as go
 import numpy as np
 import sys
 import os
+
+# Cấu hình trang PHẢI ở đầu tiên
+st.set_page_config(
+    page_title="Sơ đồ cơ quan - CRUD App",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# Import theme sau khi config
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils.theme import apply_white_theme
 
@@ -15,12 +24,6 @@ apply_white_theme()
 
 if 'selected_organ' not in st.session_state:
     st.session_state.selected_organ = None
-
-st.set_page_config(
-    page_title="Sơ đồ cơ quan - CRUD App",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 
 def load_custom_css():
     """Load custom CSS styles for the application"""
