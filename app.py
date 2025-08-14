@@ -9,9 +9,34 @@ st.set_page_config(
 # Giao diện trắng (light)
 st.markdown("""
     <style>
-        body {
-            background-color: white;
-            color: black;
+        /* Thiết lập nền trắng cho toàn bộ ứng dụng */
+        .stApp {
+            background-color: white !important;
+        }
+        
+        /* Thiết lập nền trắng cho main content */
+        .main .block-container {
+            background-color: white !important;
+        }
+        
+        /* Thiết lập nền trắng cho sidebar */
+        .css-1d391kg {
+            background-color: white !important;
+        }
+        
+        /* Thiết lập màu chữ đen */
+        .stApp, .main, .sidebar {
+            color: black !important;
+        }
+        
+        /* Đảm bảo các widget có nền trắng */
+        .stSelectbox, .stTextInput, .stTextArea, .stButton {
+            background-color: white !important;
+        }
+        
+        /* Thiết lập nền trắng cho header */
+        header[data-testid="stHeader"] {
+            background-color: white !important;
         }
     </style>
 """, unsafe_allow_html=True)
