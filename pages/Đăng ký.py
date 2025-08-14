@@ -1,5 +1,12 @@
 import streamlit as st
 from services.auth_service import register_user
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.theme import apply_white_theme
+
+# Áp dụng theme trắng
+apply_white_theme()
 
 st.title("📝 Đăng ký tài khoản")
 

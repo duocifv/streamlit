@@ -1,6 +1,13 @@
 import streamlit as st
 from services.user_service import get_users, update_profile
 from utils.helpers import hash_password
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.theme import apply_white_theme
+
+# Áp dụng theme trắng
+apply_white_theme()
 
 # Kiểm tra đã login
 if "user" not in st.session_state:

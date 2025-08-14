@@ -1,8 +1,13 @@
 import streamlit as st
 from services.user_service import get_users, save_users
 from utils.helpers import hash_password
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.theme import apply_white_theme
 
-st.set_page_config(page_title="Thêm người dùng", page_icon="➕")
+# Áp dụng theme trắng
+apply_white_theme()
 
 if "user" not in st.session_state or st.session_state.user != "admin":
     st.warning("Chỉ admin mới được truy cập.")

@@ -1,6 +1,13 @@
 import streamlit as st
 import plotly.graph_objects as go
 import numpy as np
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.theme import apply_white_theme
+
+# Áp dụng theme trắng
+apply_white_theme()
 
 # ============================================================================
 # CONFIGURATION & INITIALIZATION

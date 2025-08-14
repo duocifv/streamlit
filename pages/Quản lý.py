@@ -4,8 +4,13 @@ from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 from services.user_service import get_users, save_users, delete_user, update_user_password
 from utils.helpers import hash_password
 import pandas as pd
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.theme import apply_white_theme
 
-st.set_page_config(page_title="Quản lý người dùng", page_icon="👥")
+# Áp dụng theme trắng
+apply_white_theme()
 st.title("👥 Quản lý người dùng")
 
 # Chặn truy cập nếu không phải admin

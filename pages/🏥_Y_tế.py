@@ -1,20 +1,11 @@
 import streamlit as st
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.theme import apply_white_theme
 
-st.set_page_config(
-    page_title="Y tế - CRUD App",
-    layout="centered",
-    initial_sidebar_state="expanded"
-)
-
-# Giao diện trắng (light)
-st.markdown("""
-    <style>
-        body {
-            background-color: white;
-            color: black;
-        }
-    </style>
-""", unsafe_allow_html=True)
+# Áp dụng theme trắng
+apply_white_theme()
 
 st.title("🏥 Quản lý Y tế")
 st.write("Trang quản lý thông tin y tế")
