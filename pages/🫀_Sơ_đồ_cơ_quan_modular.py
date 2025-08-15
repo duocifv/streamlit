@@ -675,14 +675,8 @@ def main():
     st.title("🫀 Sơ đồ Cơ quan Cơ thể Người")
     st.write("Sơ đồ 2D đơn giản các cơ quan chính trong cơ thể")
     
-    # Sidebar controls
-    selected_system = sidebar_controls()
-    
-    # Status display
-    if selected_system != "Tất cả":
-        info = SYSTEM_INFO[selected_system]
-        organs_count = len(ORGAN_SYSTEMS[selected_system])
-        st.info(f"🎯 **Đang highlight hệ {selected_system}** - {organs_count} cơ quan được làm nổi bật")
+    # Set default system selection (no sidebar controls needed)
+    selected_system = "Tất cả"
     
     # Main content
     col1, col2 = st.columns([3, 1])
@@ -705,7 +699,7 @@ def main():
             <div class="organ-detail">
             <h5>🫀 Hướng dẫn sử dụng:</h5>
             <ul>
-            <li>Chọn hệ cơ quan từ sidebar</li>
+            <li>Sử dụng menu sidebar để điều hướng</li>
             <li>Click nút cơ quan để xem chi tiết</li>
             <li>🔺 Tam giác = Tim</li>
             <li>⬜ Chữ nhật = Gan</li>

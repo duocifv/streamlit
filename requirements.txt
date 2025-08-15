@@ -2,3 +2,10 @@ streamlit
 streamlit-extras
 streamlit-aggrid
 plotly
+gradio-client
+torch
+torchvision
+diffusers
+imageio
+pillow
+requests
