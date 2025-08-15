@@ -1,0 +1,43 @@
+AuthUserFile /home/limebat34/www/webdata_wwws-kyoritsumembers/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Input ID and Password."
+AuthType Basic
+require valid-user
+<Files ~ "^.(htpasswd|htaccess)$">
+    deny from all
+</Files>
+
+# SSI使用
+Options +Includes
+AddOutputFilter INCLUDES .html .htm
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteRule ^(.*)index.html$ https:/wwws-kyoritsumembers.dsd.dokidoki-gw.com/$1 [R=301,L]
+
+##読み込み優先度変える時
+#DirectoryIndex index.php index.html index.cgi
+
+###IP制限　必要になったらコメント解除
+#order deny,allow
+#deny from all
+###アクセス許可のIP記載
+##グループIP
+#allow from 153.127.194.7
+##高田馬場IP
+#allow from 152.165.126.163
+#allow from 152.165.126.236
+#allow from 152.165.126.197
+##京都IP
+#allow from 160.86.237.171
+##ベトナム・ダナン div1 IP
+#allow from 49.156.53.90
+##ベトナム・ダナン div2 IP
+#allow from 113.164.16.14
+#allow from 222.255.153.78
+#allow from 113.160.235.36
+##ベトナム・ダナン フエ IP
+#allow from 118.69.176.121
+
+##404置く時
+#ErrorDocument 404 /404.html
