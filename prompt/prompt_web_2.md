@@ -29,9 +29,13 @@
 [FEATURE_4]: Không gian thư giãn & làm việc — wifi tốc độ cao, ổ cắm tiện lợi, ánh sáng dịu nhẹ
 [FEATURE_3_ICON]: mdi:cup
 [SERVICE_1]: Giao hàng nhanh trong 60–90 phút trong khu vực nội thành
+[SERVICE_1_ICON]: mdi:truck-fast
 [SERVICE_2]: Đặt trước & ưu tiên phục vụ cho nhóm/meeting qua form nhanh
+[SERVICE_2_ICON]: mdi:calendar-check
 [SERVICE_3]: Workshop pha chế tại quán — học pha cà phê cùng barista (đăng ký theo lịch)
+[SERVICE_3_ICON]: mdi:coffee-maker
 [SERVICE_4]: Thẻ thành viên tích điểm — ưu đãi, quà tặng sinh nhật và giảm giá đặc biệt
+[SERVICE_4_ICON]: mdi:card-account-details
 [GALLERY_1]: https://picsum.photos/400/300?gallery=21
 [GALLERY_2]: https://picsum.photos/400/300?gallery=22
 [GALLERY_3]: https://picsum.photos/400/300?gallery=23
@@ -59,7 +63,7 @@
 
 ### 1. Analysis & Planning
 
-- **Project Goal:** Tạo landing page sản phẩm Cà Phê Sáng Tạo, hiện đại, responsive, minimalism + micro-interactions + glassmorphism + flexible/fluid layout.
+- **Project Goal:** Tạo landing page sản phẩm Cà Phê Sáng Tạo, hiện đại, responsive, minimalism + micro-interactions + glassmorphism.
 - **Target Audience:** Người yêu cà phê, khách hàng online, khách hàng thân thiết.
 - **Tech Stack:** HTML + CSS + JS trong 1 file duy nhất. Không dùng thư viện ngoài.
 - **UX/UI Considerations:** Responsive & Fluid Layout: Nội dung tự co giãn theo mọi kích thước màn hình (desktop, tablet, mobile). Flexible Grid: Dễ mở rộng, tự động cân chỉnh spacing và card, hiệu ứng hover, smooth scrolling, back-to-top button, card Glassmorphism cho Features, Services, Testimonial.
@@ -230,16 +234,42 @@
 
     <section id="features">
       <h2>Tính năng nổi bật</h2>
-      <div class="card">{FEATURE_1}</div>
-      <div class="card">{FEATURE_2}</div>
-      <div class="card">{FEATURE_3}</div>
+      <div class="card">
+        <span class="icon">{FEATURE_1_ICON}</span>
+        <p>{FEATURE_1}</p>
+      </div>
+      <div class="card">
+        <span class="icon">{FEATURE_2_ICON}</span>
+        <p>{FEATURE_2}</p>
+      </div>
+      <div class="card">
+        <span class="icon">{FEATURE_3_ICON}</span>
+        <p>{FEATURE_3}</p>
+      </div>
+      <div class="card">
+        <span class="icon">{FEATURE_4_ICON}</span>
+        <p>{FEATURE_4}</p>
+      </div>
     </section>
 
     <section id="services">
       <h2>Dịch vụ</h2>
-      <div class="card">{SERVICE_1}</div>
-      <div class="card">{SERVICE_2}</div>
-      <div class="card">{SERVICE_3}</div>
+      <div class="card">
+        <span class="icon">{SERVICE_1_ICON}</span>
+        <p>{SERVICE_1}</p>
+      </div>
+      <div class="card">
+        <span class="icon">{SERVICE_2_ICON}</span>
+        <p>{SERVICE_2}</p>
+      </div>
+      <div class="card">
+        <span class="icon">{SERVICE_3_ICON}</span>
+        <p>{SERVICE_3}</p>
+      </div>
+      <div class="card">
+        <span class="icon">{SERVICE_4_ICON}</span>
+        <p>{SERVICE_4}</p>
+      </div>
     </section>
 
     <section id="testimonial">
