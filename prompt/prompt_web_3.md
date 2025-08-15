@@ -37,7 +37,7 @@ Tạo **landing page HTML chuyên nghiệp** cho sản phẩm hoặc dịch vụ
 - `[MICROCOPY_SECURITY]`: Microcopy thanh toán
 - `[BRAND_TONE]`: Tone thương hiệu
 
-## Instructions for AI
+## Chain of Thoughts
 
 1. **Analysis & Planning**
 
