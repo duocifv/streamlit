@@ -17,6 +17,7 @@
 [HERO_TITLE]: Hương Vị Tinh Tế — Khơi Nguồn Sáng Tạo
 [HERO_SUBTITLE]: Thưởng thức cà phê chọn lọc, pha tay thủ công trong không gian Glassmorphism đầy cảm hứng.
 [HERO_CTA]: Đặt Bàn & Ưu Đãi Ngay
+[HERO_IMAGE]: https://black-forest-labs-flux-1-krea-dev.hf.space/gradio_api/file=/tmp/gradio/16c00e133ca696a51d6f595575d427592a88d08113456ec310e187a0a1857215/image.webp
 [MICROCOPY_SUBSCRIBE]: Đăng ký để nhận ưu đãi độc quyền — giảm 15% lần đầu.
 [NAV_ITEMS]: Trang chủ, Menu, Dịch vụ, Bộ sưu tập, Đánh giá, FAQ, Liên hệ
 [FEATURE_1]: Hạt cà phê chọn lọc từ nông trại hữu cơ — rang theo công thức giữ trọn hương vị
@@ -58,7 +59,7 @@
 
 ### 1. Analysis & Planning
 
-- **Project Goal:** Tạo landing page sản phẩm Cà Phê Sáng Tạo, hiện đại, responsive, minimalism + micro-interactions + glassmorphism/dark mode + flexible/fluid layout.
+- **Project Goal:** Tạo landing page sản phẩm Cà Phê Sáng Tạo, hiện đại, responsive, minimalism + micro-interactions + glassmorphism + flexible/fluid layout.
 - **Target Audience:** Người yêu cà phê, khách hàng online, khách hàng thân thiết.
 - **Tech Stack:** HTML + CSS + JS trong 1 file duy nhất. Không dùng thư viện ngoài.
 - **UX/UI Considerations:** Responsive & Fluid Layout: Nội dung tự co giãn theo mọi kích thước màn hình (desktop, tablet, mobile). Flexible Grid: Dễ mở rộng, tự động cân chỉnh spacing và card, hiệu ứng hover, smooth scrolling, back-to-top button, card Glassmorphism cho Features, Services, Testimonial.
@@ -216,7 +217,7 @@
     </header>
 
     <section id="hero" class="hero">
-      <img src="https://picsum.photos/800/400?random=1" alt="Cà Phê Sáng Tạo" />
+      <img src="[PRODUCT_IMAGE]" alt="Cà Phê Sáng Tạo" />
       <div>
         <h1>Cà Phê Sáng Tạo</h1>
         <p>
