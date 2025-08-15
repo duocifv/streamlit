@@ -72,7 +72,7 @@ Tạo **landing page HTML chuyên nghiệp** cho sản phẩm hoặc dịch vụ
    - Placeholder images từ `[PRODUCT_IMAGE]` hoặc demo ảnh.
    - SEO tags + meta keywords + microcopy đầy đủ.
 
-## Example Input
+## Example Input (giá trị thực cho các biến trên)
 
 ```text
 [PROJECT_NAME]: Cà Phê Sáng Tạo
@@ -131,3 +131,61 @@ Tạo **landing page HTML chuyên nghiệp** cho sản phẩm hoặc dịch vụ
 [MICROCOPY_SECURITY]: Thanh toán an toàn — hỗ trợ thẻ, ví điện tử, thanh toán khi nhận hàng
 [BRAND_TONE]: Ấm áp, tinh tế, sáng tạo — thân thiện nhưng chuyên nghiệp
 ```
+
+## Example Output
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[PROJECT_NAME]</title>
+  <meta name="description" content="[SEO_DESCRIPTION]">
+  <meta name="keywords" content="[META_KEYWORDS]">
+  <style>
+    /* CSS Glassmorphism + layout + animations */
+    body { font-family: sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #f0f0f0, #e0e0e0); }
+    header, section, footer { padding: 2rem; }
+    .glass-card { backdrop-filter: blur(10px); background: rgba(255,255,255,0.2); border-radius: 1rem; padding: 1rem; margin: 1rem 0; }
+    button { background-color: [ACCENT_COLOR]; border: none; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; cursor: pointer; transition: transform 0.2s; }
+    button:hover { transform: scale(1.05); }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      [NAV_ITEMS]
+    </nav>
+  </header>
+  <section class="hero">
+    <img src="[PRODUCT_IMAGE]" alt="[PROJECT_NAME]">
+    <h1>[HERO_TITLE]</h1>
+    <p>[HERO_SUBTITLE]</p>
+    <button>[HERO_CTA]</button>
+  </section>
+  <section class="features">
+    [FEATURES]
+  </section>
+  <section class="services">
+    [SERVICES]
+  </section>
+  <section class="gallery">
+    [GALLERY]
+  </section>
+  <section class="testimonials">
+    [TESTIMONIALS]
+  </section>
+  <section class="faq">
+    [FAQ]
+  </section>
+  <section class="cta">
+    <button onclick="location.href='[CTA_LINK]'">[CTA_TEXT]</button>
+  </section>
+  <footer>
+    <p>[MICROCOPY_SECURITY]</p>
+  </footer>
+  <script>
+    // JS cho slider, accordion FAQ, smooth scroll, back-to-top
+  </script>
+</body>
+</html>
